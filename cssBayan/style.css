@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EDF2EC;
+    font-family: "Inika", serif;
+    font-style: normal;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #E06733;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.meme__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ico span {
+    width: 2%;
+    height: 0.2%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #717171;
+    transition: 0.5s;
+  }
+
