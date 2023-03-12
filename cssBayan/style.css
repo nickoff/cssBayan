@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EDF2EC;
+    font-family: "Inika", serif;
+    font-style: normal;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #E06733;
+    margin: 0 auto
+}
+
+hr {
+    width: 100%;
+    height: 0.05rem;
+    background-color: #717171;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+
+.meme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme__lable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.meme__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ico {
+   width: 3%;
+   height: 100%;
+   opacity: 0;
+   font-size: 1.2em;
+   transition: 0.5s;   
+}
+
+.bayan_target {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0%;
+    transition: 0.5s;
+}
+
+img {
+    width: 100%;
+}
+
+.tab:checked ~ .meme__lable {
+    color: rgb(0, 153, 255);
+}
+
+.meme__lable:hover .bayan_target {
+    width: 60%;
+    padding-bottom: 3%;
+    transition: 0.5s;
+}
+
+.meme__lable:hover .ico {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+
+.memes:hover .ico {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.tab:checked + .meme__lable .bayan_target {
+    width: 60%;
+    padding-bottom: 3%;
+    transition: 0.5s;
+}
+
+.tab:checked + .meme__lable .ico {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+@media (hover: none) {
+    .ico {
+      opacity: 1;
+    }
+  }
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.4em;
+        transition: 0.3s;
+    }
+
+    .wrapper {
+        max-width: 75%;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 820px) {
+    body {
+        font-size: 1.2em;
+        transition: 0.3s;
+    }
+
+    .wrapper {
+        max-width: 80%;
+        transition: 0.3s;
+    }
+
+    .tab:checked + .meme__lable .bayan_target {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1em;
+        transition: 0.3s;
+    }
+
+    .wrapper {
+        max-width: 85%;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        font-size: 0.9em;
+        transition: 0.3s;
+    }
+
+    .wrapper {
+        max-width: 90%;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.8em;
+        transition: 0.3s;
+    }
+
+    .wrapper {
+        max-width: 95%;
+        transition: 0.3s;
+    }
+}
+
