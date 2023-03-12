@@ -68,7 +68,7 @@ hr {
 }
 
 img {
-    width: 95%;
+    width: 100%;
 }
 
 .tab:checked ~ .meme__lable {
@@ -76,7 +76,7 @@ img {
 }
 
 .meme__lable:hover .bayan_target {
-    width: 80%;
+    width: 60%;
     padding-bottom: 3%;
     transition: 0.5s;
 }
@@ -93,7 +93,7 @@ img {
 }
 
 .tab:checked + .meme__lable .bayan_target {
-    width: 80%;
+    width: 60%;
     padding-bottom: 3%;
     transition: 0.5s;
 }
@@ -130,6 +130,10 @@ img {
     .wrapper {
         max-width: 80%;
         transition: 0.3s;
+    }
+
+    .tab:checked + .meme__lable .bayan_target {
+        width: 85%;
     }
 }
 
