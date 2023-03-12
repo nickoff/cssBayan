@@ -80,6 +80,11 @@ img {
     transition: 0.5s;
 }
 
+.meme__lable:hover .ico {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
 
 .memes:hover .ico {
     opacity: 100;
